@@ -1,6 +1,7 @@
 <table class="table">
   <thead class="table-dark">
     <tr>
+      <th>&nbsp;</th>
       <th>Name</th>
       <th>Price</th>
       <th>Units in Stock</th>
@@ -11,6 +12,7 @@
       <td>{{ tempProduct.name }}</td>
       <td>{{ tempProduct.unitPrice | currency:'USD' }}</td>
       <td>{{ tempProduct.unitsInStock }}</td>
+      <td><img src="{{ tempProduct.imageUrl }}" height="50" /></td>
     </tr>
   </tbody>
 </table>
